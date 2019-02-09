@@ -18,7 +18,7 @@ node ('Slave')
 	
 	stage('Checkout') {
 				
-//first commit				
+//first commit	t			
 checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'anishgithub', url: 'https://github.com/anishpravin/gameoflife.git']]])
 			          }
 			
